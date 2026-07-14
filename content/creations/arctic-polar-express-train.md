@@ -1,10 +1,15 @@
 ---
-title: "Arctic Polar Express Train"
+title: Arctic Polar Express Train
 date: 2026-05-01
-theme: "City"
+theme: Train
 setNumber: "60470"
 pieceCount: 1517
-tags: [city, arctic, trains, remote-control, explorers]
+tags:
+  - city
+  - arctic
+  - trains
+  - remote-control
+  - explorers
 coverImage: /creations/arctic-polar-express-train/cover.jpg
 gallery:
   - /creations/arctic-polar-express-train/cover.jpg
