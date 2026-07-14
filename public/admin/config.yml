@@ -5,8 +5,8 @@ backend:
   base_url: https://guha-lego-creations.vercel.app
   auth_endpoint: api/auth
 
-media_folder: "public/creations/{{slug}}"
-public_folder: "/creations/{{slug}}"
+media_folder: "public/creations"
+public_folder: "/creations"
 
 collections:
   - name: "creations"
@@ -14,15 +14,17 @@ collections:
     folder: "content/creations"
     create: true
     slug: "{{slug}}"
+    media_folder: "{{media_folder}}/{{slug}}"
+    public_folder: "{{public_folder}}/{{slug}}"
     identifier_field: title
     sortable_fields: ["date", "title"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date Built", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
-      - { label: "Theme", name: "theme", widget: "string", hint: "e.g. Star Wars, Technic, Castle, City" }
+      - { label: "Theme", name: "theme", widget: "string", hint: "One category only, e.g. Star Wars — no commas (used as a single filter button)" }
       - { label: "Set Number", name: "setNumber", widget: "string", required: false, hint: "Leave blank for original (MOC) builds" }
       - { label: "Piece Count", name: "pieceCount", widget: "number", required: false, value_type: "int" }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false, hint: "Lowercase, one word/phrase per tag, e.g. starships" }
       - { label: "Cover Photo", name: "coverImage", widget: "image" }
       - { label: "Photo Gallery", name: "gallery", widget: "list", field: { label: "Photo", name: "image", widget: "image" } }
       - { label: "Videos", name: "videos", widget: "list", required: false, hint: "Short clips, e.g. MP4", field: { label: "Video", name: "video", widget: "file" } }
