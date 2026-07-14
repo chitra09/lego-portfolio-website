@@ -6,7 +6,7 @@ tags:
   - fll
   - moc
   - team
-coverImage: /creations/bfebe327-8818-4228-8ba9-047c26dd5f65.jpg
+coverImage: /creations/unearthed-the-great-discovery-fll-2025-26-season/bfebe327-8818-4228-8ba9-047c26dd5f65.jpg
 gallery:
   - /creations/a00ed1ed-61c6-4262-a9c7-4deaa1bca02a.jpg
 videos:
