@@ -5,6 +5,8 @@ backend:
   base_url: https://guha-lego-creations.vercel.app
   auth_endpoint: api/auth
 
+site_url: https://guha-lego-creations.vercel.app
+
 media_folder: "public/creations"
 public_folder: "/creations"
 
