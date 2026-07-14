@@ -1,7 +1,7 @@
 ---
 title: "Transformers: Optimus Prime"
 date: 2025-05-05
-theme: Tranformers
+theme: Transformers
 setNumber: "10302"
 pieceCount: 1508
 tags:
