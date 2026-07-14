@@ -2,6 +2,8 @@ backend:
   name: github
   repo: chitra09/lego-portfolio-website
   branch: main
+  base_url: https://guha-lego-creations.vercel.app
+  auth_endpoint: api/auth
 
 media_folder: "public/creations/{{slug}}"
 public_folder: "/creations/{{slug}}"

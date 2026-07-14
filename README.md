@@ -35,24 +35,32 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Finishing the `/admin` CMS setup
 
 `public/admin/config.yml` has `backend.repo` set to
-`chitra09/lego-portfolio-website`.
+`chitra09/lego-portfolio-website`, with `base_url` pointing at this same
+site and `auth_endpoint: api/auth`.
 
 Decap CMS's GitHub backend needs an OAuth app + a small proxy to complete
 login (it was built with Netlify's auth in mind, and we're on Vercel
-instead). Steps:
+instead). Rather than depending on a third-party template, the proxy is
+just two serverless routes in this app: `app/api/auth/route.ts` (kicks
+off the GitHub OAuth redirect) and `app/api/callback/route.ts` (exchanges
+the code for a token and hands it back to the CMS popup).
 
-1. Create a GitHub OAuth App at
-   `github.com/settings/developers` → "New OAuth App":
-   - Homepage URL: your deployed site URL
-   - Authorization callback URL: `https://<your-site>/api/auth/callback`
-2. Deploy an OAuth provider proxy — a small pair of Vercel serverless API
-   routes that handle the GitHub OAuth handshake on Decap's behalf. Search
-   for "Decap CMS GitHub OAuth provider Vercel" to find a current
-   community template (this ecosystem changes; I'm intentionally not
-   hardcoding a specific repo link here since I can't vouch one is still
-   maintained). Configure it with the OAuth App's client ID/secret as
-   Vercel environment variables.
-3. Point `config.yml`'s `backend.base_url` at that deployed proxy.
+One-time setup:
 
-This is a one-time setup step — once done, adding new creations through
-`/admin` never needs it touched again.
+1. Create a GitHub OAuth App at `github.com/settings/developers` →
+   "OAuth Apps" → "New OAuth App":
+   - Application name: anything, e.g. "Lego Gallery CMS"
+   - Homepage URL: `https://guha-lego-creations.vercel.app`
+   - Authorization callback URL:
+     `https://guha-lego-creations.vercel.app/api/callback`
+2. After registering, click "Generate a new client secret" and copy both
+   the **Client ID** and **Client Secret**.
+3. In the Vercel project → Settings → Environment Variables, add:
+   - `OAUTH_CLIENT_ID` = the Client ID
+   - `OAUTH_CLIENT_SECRET` = the Client Secret
+4. Redeploy (Vercel does this automatically after saving env vars, or
+   trigger one manually).
+
+After that, `/admin` → "Login with GitHub" works end-to-end. This is a
+one-time setup step — adding new creations through `/admin` afterward
+never needs it touched again.
