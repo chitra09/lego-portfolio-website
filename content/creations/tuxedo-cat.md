@@ -3,7 +3,7 @@ title: Tuxedo Cat
 date: 2025-05-05
 theme: Animal
 setNumber: "21349"
-pieceCount: 1707
+pieceCount: 1710
 tags:
   - Cat
 coverImage: /creations/tuxedo-cat/img_6311.jpg
