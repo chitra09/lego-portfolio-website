@@ -18,7 +18,7 @@ collections:
     sortable_fields: ["date", "title"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date Built", name: "date", widget: "date" }
+      - { label: "Date Built", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
       - { label: "Theme", name: "theme", widget: "string", hint: "e.g. Star Wars, Technic, Castle, City" }
       - { label: "Set Number", name: "setNumber", widget: "string", required: false, hint: "Leave blank for original (MOC) builds" }
       - { label: "Piece Count", name: "pieceCount", widget: "number", required: false, value_type: "int" }
