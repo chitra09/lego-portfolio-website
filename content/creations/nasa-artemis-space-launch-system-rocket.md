@@ -1,7 +1,7 @@
 ---
 title: NASA Artemis Space Launch System Rocket
 date: 2026-06-20
-theme: Rocket
+theme: Vehicle
 setNumber: "42221"
 pieceCount: 632
 tags:
