@@ -1,7 +1,7 @@
 ---
 title: Retro Radio
 date: 2026-04-02
-theme: Radio
+theme: Retro
 setNumber: "10334"
 pieceCount: 906
 tags:
