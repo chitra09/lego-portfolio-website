@@ -64,3 +64,20 @@ One-time setup:
 After that, `/admin` → "Login with GitHub" works end-to-end. This is a
 one-time setup step — adding new creations through `/admin` afterward
 never needs it touched again.
+
+## Password-gating `/admin`
+
+Since the GitHub repo is public, anyone can open `/admin` and see the CMS
+UI (they just can't publish, since that separately requires GitHub write
+access — see above). `middleware.ts` adds an HTTP Basic Auth prompt in
+front of `/admin`, `/api/auth`, and `/api/callback` so the page itself
+isn't visible without a shared password.
+
+Set these as Vercel environment variables (Project → Settings →
+Environment Variables):
+
+- `ADMIN_USER` — any username you want
+- `ADMIN_PASSWORD` — a shared password
+
+If either is unset, the middleware fails closed (blocks everything)
+rather than leaving `/admin` open. Redeploy after setting them.
