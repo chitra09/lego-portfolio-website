@@ -1,17 +1,15 @@
 ---
 title: "Millennium Falcon"
-date: 2025-11-02
+date: 2026-05-01
 theme: "Star Wars"
-setNumber: "75257"
-pieceCount: 1351
-tags: [starships, star-wars, large-build]
-coverImage: /creations/millennium-falcon/cover.svg
+setNumber: "75426"
+pieceCount: 885
+tags: [starships, star-wars, smart-play]
+coverImage: /creations/millennium-falcon/cover.jpg
 gallery:
-  - /creations/millennium-falcon/cover.svg
-  - /creations/millennium-falcon/01.svg
-  - /creations/millennium-falcon/02.svg
+  - /creations/millennium-falcon/cover.jpg
 ---
 
-The big one. Took three afternoons to finish, mostly because we kept
-stopping to admire the cockpit detail. Favorite part was the rotating
-gun turrets.
+A SMART Play-compatible Millennium Falcon with stud shooters and a
+foldout interior for holochess and Lightsaber practice, complete with 4
+SMART minifigures — Han Solo, Chewbacca, Luke Skywalker, and C-3PO.
