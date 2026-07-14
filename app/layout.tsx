@@ -33,12 +33,20 @@ export default function RootLayout({
             <a href="/" className="text-lg font-semibold tracking-tight">
               🧱 Lego Gallery
             </a>
-            <a
-              href="/admin"
-              className="text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200"
-            >
-              Add a creation
-            </a>
+            <div className="flex items-center gap-5 text-sm">
+              <a
+                href="/about"
+                className="text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200"
+              >
+                About
+              </a>
+              <a
+                href="/admin"
+                className="text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200"
+              >
+                Add a creation
+              </a>
+            </div>
           </div>
         </header>
         <main className="flex-1">{children}</main>

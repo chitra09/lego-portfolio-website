@@ -9,7 +9,7 @@ export default async function Home() {
     <div className="mx-auto max-w-6xl px-6 py-10">
       <div className="mb-10">
         <h1 className="text-3xl font-semibold tracking-tight">
-          Every Lego creation, in one place
+          Guha Viswanathan&apos;s Lego creations
         </h1>
         <p className="mt-2 text-zinc-500 dark:text-zinc-400">
           {creations.length} build{creations.length === 1 ? "" : "s"} and counting.
