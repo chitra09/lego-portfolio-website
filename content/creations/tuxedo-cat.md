@@ -1,7 +1,7 @@
 ---
 title: Tuxedo Cat
 date: 2025-05-05
-theme: Cat
+theme: Animal
 setNumber: "21349"
 pieceCount: 1707
 tags:
