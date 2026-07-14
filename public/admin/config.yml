@@ -14,8 +14,8 @@ collections:
     folder: "content/creations"
     create: true
     slug: "{{slug}}"
-    media_folder: "{{media_folder}}/{{slug}}"
-    public_folder: "{{public_folder}}/{{slug}}"
+    media_folder: "/public/creations/{{slug}}"
+    public_folder: "/creations/{{slug}}"
     identifier_field: title
     sortable_fields: ["date", "title"]
     fields:
