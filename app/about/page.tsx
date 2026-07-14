@@ -10,6 +10,7 @@ export default function About() {
           and I&apos;ve built Legos with thousands of pieces.
         </p>
         <p>I also participated in FLL this 25-26 season.</p>
+        <p>Come and check my Lego creations. I will keep this page updated!</p>
       </div>
     </div>
   );
