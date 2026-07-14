@@ -2,7 +2,7 @@
 title: Leonardo da Vinci's Workshop
 date: 2026-07-10
 theme: Icons
-pieceCount: 249
+pieceCount: 251
 tags:
   - Icons
 coverImage: /creations/leonardo-da-vincis-workshop/img_6888.jpg
