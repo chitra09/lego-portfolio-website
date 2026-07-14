@@ -3,7 +3,7 @@ title: Weasleys' Wizard Wheezes
 date: 2025-04-06
 theme: Harry Potter
 setNumber: "76422"
-pieceCount: 832
+pieceCount: 834
 tags:
   - Harry Potter
 coverImage: /creations/weasleys-wizard-wheezes/img_8360.jpg
