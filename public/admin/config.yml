@@ -23,4 +23,5 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Cover Photo", name: "coverImage", widget: "image" }
       - { label: "Photo Gallery", name: "gallery", widget: "list", field: { label: "Photo", name: "image", widget: "image" } }
+      - { label: "Videos", name: "videos", widget: "list", required: false, hint: "Short clips, e.g. MP4", field: { label: "Video", name: "video", widget: "file" } }
       - { label: "Story", name: "body", widget: "markdown", required: false }

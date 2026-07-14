@@ -55,6 +55,8 @@ coverImage: /creations/millennium-falcon/cover.jpg
 gallery:
   - /creations/millennium-falcon/01.jpg
   - /creations/millennium-falcon/02.jpg
+videos:                     # optional, short clips (e.g. MP4)
+  - /creations/millennium-falcon/flying.mp4
 ---
 
 A few sentences about the build — how long it took, favorite part, any

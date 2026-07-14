@@ -83,6 +83,20 @@ export default async function CreationPage({
         />
       </div>
 
+      {creation.videos.length > 0 && (
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {creation.videos.map((src) => (
+            <video
+              key={src}
+              src={src}
+              controls
+              playsInline
+              className="w-full rounded-lg bg-black"
+            />
+          ))}
+        </div>
+      )}
+
       {creation.contentHtml && (
         <div
           className="prose prose-zinc mt-8 max-w-none dark:prose-invert"

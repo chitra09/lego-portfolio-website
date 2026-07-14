@@ -16,6 +16,7 @@ export interface Creation {
   tags: string[];
   coverImage: string;
   gallery: string[];
+  videos: string[];
   contentHtml: string;
 }
 
@@ -43,6 +44,7 @@ export async function getCreation(slug: string): Promise<Creation> {
     tags: data.tags ?? [],
     coverImage: data.coverImage,
     gallery: data.gallery ?? [],
+    videos: data.videos ?? [],
     contentHtml: processed.toString(),
   };
 }
