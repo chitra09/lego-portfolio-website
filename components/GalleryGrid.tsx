@@ -72,7 +72,15 @@ export default function GalleryGrid({
                 />
               </div>
               <div className="p-4">
-                <h2 className="font-medium">{creation.title}</h2>
+                <h2 className="font-medium">
+                  {creation.title}
+                  {creation.pieceCount && (
+                    <span className="font-normal text-zinc-500 dark:text-zinc-400">
+                      {" "}
+                      ({creation.pieceCount.toLocaleString()} pcs)
+                    </span>
+                  )}
+                </h2>
                 <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
                   {creation.theme} ·{" "}
                   {new Date(creation.date).toLocaleDateString(undefined, {
