@@ -86,6 +86,7 @@ export default function GalleryGrid({
                   {new Date(creation.date).toLocaleDateString(undefined, {
                     year: "numeric",
                     month: "short",
+                    timeZone: "UTC",
                   })}
                 </p>
               </div>

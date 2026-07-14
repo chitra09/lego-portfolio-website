@@ -43,6 +43,7 @@ export default async function CreationPage({
             year: "numeric",
             month: "long",
             day: "numeric",
+            timeZone: "UTC",
           })}
         </span>
         {creation.setNumber && (
