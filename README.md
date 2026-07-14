@@ -13,8 +13,9 @@ Preferred way — via the CMS:
 
 Manual way (for local testing) — add a Markdown file under
 `content/creations/<slug>.md` with frontmatter matching the shape in
-`lib/creations.ts`, and drop photos in `public/creations/<slug>/`. See the
-two sample creations in `content/creations/` for the exact format.
+`lib/creations.ts`, and drop photos (and optionally short videos) in
+`public/creations/<slug>/`. See any existing file in `content/creations/`
+for the exact format.
 
 ## Local development
 
