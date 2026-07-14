@@ -22,7 +22,7 @@ collections:
     sortable_fields: ["date", "title"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date Built", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
+      - { label: "Date Built", name: "date", widget: "string", pattern: ["^\\d{4}-\\d{2}-\\d{2}$", "Use YYYY-MM-DD, e.g. 2026-05-01"], hint: "Type it as YYYY-MM-DD, e.g. 2026-05-01" }
       - { label: "Theme", name: "theme", widget: "string", hint: "One category only, e.g. Star Wars — no commas (used as a single filter button)" }
       - { label: "Set Number", name: "setNumber", widget: "string", required: false, hint: "Leave blank for original (MOC) builds" }
       - { label: "Piece Count", name: "pieceCount", widget: "number", required: false, value_type: "int" }
