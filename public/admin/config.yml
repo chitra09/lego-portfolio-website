@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: chitra09/lego-portfolio-website
+  branch: main
+
+media_folder: "public/creations/{{slug}}"
+public_folder: "/creations/{{slug}}"
+
+collections:
+  - name: "creations"
+    label: "Lego Creations"
+    folder: "content/creations"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date Built", name: "date", widget: "date" }
+      - { label: "Theme", name: "theme", widget: "string", hint: "e.g. Star Wars, Technic, Castle, City" }
+      - { label: "Set Number", name: "setNumber", widget: "string", required: false, hint: "Leave blank for original (MOC) builds" }
+      - { label: "Piece Count", name: "pieceCount", widget: "number", required: false, value_type: "int" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Cover Photo", name: "coverImage", widget: "image" }
+      - { label: "Photo Gallery", name: "gallery", widget: "list", field: { label: "Photo", name: "image", widget: "image" } }
+      - { label: "Story", name: "body", widget: "markdown", required: false }
