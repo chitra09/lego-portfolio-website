@@ -1,7 +1,7 @@
 ---
 title: Arctic Polar Express Train
 date: 2026-05-01
-theme: Train
+theme: Vehicle
 setNumber: "60470"
 pieceCount: 1517
 tags:
