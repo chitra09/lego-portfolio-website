@@ -1,17 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
 
 function renderPage(script: string) {
-  return new NextResponse(
+  const response = new NextResponse(
     `<!doctype html><html><body><script>${script}</script></body></html>`,
     { headers: { "Content-Type": "text/html" } }
   );
+  response.cookies.delete("oauth_state");
+  return response;
 }
 
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code");
+  const state = request.nextUrl.searchParams.get("state");
+  const storedState = request.cookies.get("oauth_state")?.value;
   const clientId = process.env.OAUTH_CLIENT_ID;
   const clientSecret = process.env.OAUTH_CLIENT_SECRET;
 
+  if (!state || !storedState || state !== storedState) {
+    return new NextResponse("Invalid or missing OAuth state.", { status: 400 });
+  }
   if (!code) {
     return new NextResponse("Missing authorization code.", { status: 400 });
   }

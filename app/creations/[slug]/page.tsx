@@ -52,7 +52,7 @@ export default async function CreationPage({
             <span>Set #{creation.setNumber}</span>
           </>
         )}
-        {creation.pieceCount && (
+        {creation.pieceCount != null && (
           <>
             <span>·</span>
             <span>{creation.pieceCount.toLocaleString()} pieces</span>

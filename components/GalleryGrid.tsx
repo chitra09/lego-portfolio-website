@@ -74,7 +74,7 @@ export default function GalleryGrid({
               <div className="p-4">
                 <h2 className="font-medium">
                   {creation.title}
-                  {creation.pieceCount && (
+                  {creation.pieceCount != null && (
                     <span className="font-normal text-zinc-500 dark:text-zinc-400">
                       {" "}
                       ({creation.pieceCount.toLocaleString()} pcs)

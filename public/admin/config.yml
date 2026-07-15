@@ -7,7 +7,7 @@ backend:
 
 site_url: https://guha-lego-creations.vercel.app
 
-media_folder: "public/creations"
+media_folder: "/public/creations"
 public_folder: "/creations"
 
 collections:

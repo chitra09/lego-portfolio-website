@@ -51,7 +51,17 @@ export async function getCreation(slug: string): Promise<Creation> {
 
 export async function getAllCreations(): Promise<Creation[]> {
   const slugs = readSlugs();
-  const creations = await Promise.all(slugs.map(getCreation));
+  const results = await Promise.allSettled(slugs.map(getCreation));
+
+  const creations: Creation[] = [];
+  for (const result of results) {
+    if (result.status === "fulfilled") {
+      creations.push(result.value);
+    } else {
+      console.error("Skipping creation with parse error:", result.reason);
+    }
+  }
+
   return creations.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
