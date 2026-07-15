@@ -5,8 +5,10 @@ theme: Arcade
 setNumber: "10323"
 pieceCount: 2651
 tags:
-  - Arcade
+  - arcade
 coverImage: /creations/pac-man-arcade/img_6882.jpg
+gallery:
+  - /creations/pac-man-arcade/img_6882.jpg
 videos:
   - /creations/pac-man-arcade/img_6890.mov
 ---

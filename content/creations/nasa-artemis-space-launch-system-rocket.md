@@ -5,7 +5,7 @@ theme: Vehicle
 setNumber: "42221"
 pieceCount: 632
 tags:
-  - Rocket
+  - rocket
 coverImage: /creations/nasa-artemis-space-launch-system-rocket/img_9922-edit.jpg
 gallery:
   - /creations/nasa-artemis-space-launch-system-rocket/img_6892.jpg

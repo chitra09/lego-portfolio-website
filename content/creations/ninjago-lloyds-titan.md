@@ -5,7 +5,7 @@ theme: Ninjago
 setNumber: "71860"
 pieceCount: 1293
 tags:
-  - Ninjago
+  - ninjago
 coverImage: /creations/ninjago-lloyds-titan/img_9973.jpg
 gallery: []
 ---
