@@ -1,6 +1,6 @@
 ---
 title: "Avatar: Skimwing Adventure"
-date: 2026-07-15
+date: 2025-12-18
 theme: Avatar
 setNumber: "75576"
 pieceCount: 259

@@ -1,6 +1,6 @@
 ---
 title: Lamborghini Revuelto Super Sports Car
-date: 2026-07-15
+date: 2025-11-10
 theme: Vehicle
 setNumber: "42214"
 pieceCount: 1135

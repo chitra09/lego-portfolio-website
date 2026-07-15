@@ -1,6 +1,6 @@
 ---
 title: White Rabbit
-date: 2026-07-15
+date: 2025-09-01
 theme: Animal
 setNumber: "31133"
 pieceCount: 258
