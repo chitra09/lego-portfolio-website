@@ -1,6 +1,6 @@
 ---
 title: Record Player with Flowers
-date: 2026-07-15
+date: 2025-06-01
 theme: Retro
 setNumber: "31172"
 pieceCount: 366
